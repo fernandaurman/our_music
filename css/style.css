@@ -1,6 +1,12 @@
+html, body {
+    overflow-x: hidden;
+}
+
 * {
     box-sizing: border-box;
 }
+
+/* Franco's styling */
 
 #franco {
     font-family: Arial, Helvetica, sans-serif;
@@ -42,12 +48,32 @@
 }
 
 #franco > ol li .franco_song-information p {
-    margin: 0;
+    margin: 0 0 3px 0;
     padding: 0;
 }
 
     
 #franco > ol li:not(:last-of-type) {
     margin-bottom: 15px;
+}
+
+@media screen and (max-width: 992px) {
+    #franco > ol {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 0;
+        padding: 0;
+    }
+
+    #franco > ol li {
+        flex-direction: column;
+        width: 160px;
+        overflow-wrap: break-word;
+    }
+
+    #franco > ol li .franco_song-information {
+        padding-left: 0;
+    }
 }
 
