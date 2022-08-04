@@ -77,3 +77,33 @@ html, body {
     }
 }
 
+/* Fernanda change*/
+  
+#fernanda > h3 {
+    font-family: Garamond, serif;
+    font-size: 25px;
+}
+
+#fernanda > ol li {
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0.7rem;
+    border: 1px solid rgb(186, 186, 186);
+    border-radius: 0.5rem;
+    animation: move 3s infinite;
+    background: #aebfee;
+    background: linear-gradient(81deg, #aebfee 20%, #df94e9 70%); 
+    
+}
+
+#fernanda > ol li img {
+    max-width: 5rem;
+    
+}
+
+#fernanda > ol li span{
+    margin-left: 2rem;
+    color: #000;
+}
