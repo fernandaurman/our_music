@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+
+#franco {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#franco > ol li {
+    display: flex;
+    padding: 10px;
+    border: 1px solid rgb(186, 186, 186);
+    border-radius: 5px;
+}
+
+#franco > ol li:nth-child(1)::after {
+    content: '1';
+}
+
+#franco > ol li:nth-child(2)::after {
+    content: '2';
+}
+
+#franco > ol li:nth-child(3)::after {
+    content: '3';
+}
+
+#franco > ol li::after {
+    margin-left: auto;
+    font-size: 4em;
+}
+
+#franco > ol li img {
+    max-width: 150px;
+}
+
+#franco > ol li .franco_song-information {
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    justify-content: space-around;
+}
+
+#franco > ol li .franco_song-information p {
+    margin: 0;
+    padding: 0;
+}
+
+    
+#franco > ol li:not(:last-of-type) {
+    margin-bottom: 15px;
+}
+
